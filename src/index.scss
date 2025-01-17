@@ -1,0 +1,30 @@
+.section {
+    margin-bottom: 25px;
+    &:last-of-type {
+        margin-bottom: 40px;
+    }
+}
+.slider-container {
+    display: flex;
+    overflow: hidden;
+}
+.slick-list {
+    padding: 0;
+}
+.slick-track {
+    display: flex;
+    column-gap: 25px;
+}
+.slick-slider {
+    position: relative;
+    width: 100%;
+}
+.slick-slide {
+    border-radius: 12px;
+        border: 1px solid #ffffff0a;
+       flex-grow: 0;
+      width: 300px;
+        border-radius: 12px;
+        overflow: hidden;
+        flex-shrink: 0;
+}

@@ -1,0 +1,48 @@
+.barContainer {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    width: 100%;
+    &>span {
+       color: transparent;
+       transition: color .3s ease-in-out;
+    }
+    &:hover>span {
+        color: #fff;
+    }
+}
+.progressLine {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #596477;
+    border-radius: 12px;
+    position: relative;
+    width: 100%;
+    height: 4px;
+    &:before {
+        position: absolute;
+    transform: translateY(-50%);
+    // transition: background-color yellow;
+    border-radius: 12px;
+    background-color: #7786EF;
+    cursor: pointer;
+    width: var(--fill-percentage);
+    height: 4px;
+    content: "";
+    inset-block-start: 50%;
+    inset-inline-start: 0;
+    }
+    
+}
+.progressLine::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #7786EF;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.progressLine:active::-webkit-slider-thumb {
+    transform: scale(1.2);
+    background: #007db5;
+  }

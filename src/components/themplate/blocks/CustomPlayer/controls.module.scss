@@ -1,0 +1,17 @@
+.controlsBlock {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.playBtn {
+    border-radius: 50%;
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   padding-left: 6px;
+}

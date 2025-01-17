@@ -1,0 +1,19 @@
+.header {
+    font-weight: 700;
+    font-size: 24px;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.backBtn {
+    border-radius: 4px;
+    background-color: #1E2023;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}

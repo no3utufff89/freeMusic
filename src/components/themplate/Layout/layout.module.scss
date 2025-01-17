@@ -1,0 +1,14 @@
+.layout {
+    min-height: 100vh;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 256px calc(100% - 256px);
+    grid-template-rows: min-content min-content 1fr min-content;
+    grid-template-areas: "header header"
+    "sidebar main"
+    "sidebar footer"
+    "player player";
+    // padding-bottom: 80px;
+    position: relative;
+
+}

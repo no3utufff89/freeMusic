@@ -1,0 +1,31 @@
+.wrapper {
+    border-radius: 32px;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 290px;
+    position: relative;
+    background-color: #F2F3F7;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.banner {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.header {
+    font-size: 26px;
+    font-weight: 700;
+}
+.subtitle {
+    font-weight: 600;
+    color: #636566;
+    font-size: 20px;
+}

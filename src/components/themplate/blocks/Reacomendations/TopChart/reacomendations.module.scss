@@ -1,0 +1,13 @@
+.recomedationsList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 25px;
+    row-gap: 25px;
+    justify-content: space-between;
+   
+    border-radius: 12px;
+    padding: 12px;
+   
+    
+}

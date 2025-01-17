@@ -1,0 +1,35 @@
+.artistCard {
+    width: 250px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+}
+.artistImage {
+    border-radius: 50%;
+    width: 100%;
+   aspect-ratio: 1/1;
+    margin: 0 auto;
+    overflow: hidden;
+    display: block;
+    margin-bottom: 15px;
+}
+.artistInfo {
+   background-color: #474747;
+   width: 100%;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   text-align: center;
+   border-radius: 12px;
+}
+.artistName {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}

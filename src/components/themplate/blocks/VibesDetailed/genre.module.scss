@@ -1,0 +1,29 @@
+.genreItem {
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1/1;
+    padding-left: 12px;
+    padding-right: 12px;
+    transition: .3s ease-in-out;
+   
+    mix-blend-mode:difference;
+    color:white;
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+.title {
+    display: block;
+    font-weight: 500;
+   
+    font-size: 18px;
+}
+.image {
+    width: 90px;
+    height: 90px;
+}

@@ -1,0 +1,13 @@
+.contentHeader {
+    
+    display: flex;
+    align-items: center;
+   &>svg {
+    transition: .3s ease-out;
+   }
+    &:hover {
+       &>svg {
+       transform: translateX(10px);
+       }
+    }
+}

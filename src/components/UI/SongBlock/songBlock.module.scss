@@ -1,0 +1,38 @@
+.songBlock {
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 20px repeat(2, auto) max-content;
+    column-gap: 15px;
+    transition: .3s ease-in-out;
+    align-items: center;
+    padding: 12px;
+    &:hover {
+        transform: scale(1.02);
+        box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.08), 0 0 16px 0 rgba(0, 0, 0, 0.08);
+    }
+    &__content {
+        display: flex;
+       align-items: center;
+       column-gap: 10px;
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+    }
+    &__name {
+         font-size: 14px;
+         color: #212121;
+         margin-bottom: 5px;
+    }
+    &__artist {
+        color: #8da0bc;
+    }
+    &__image {
+        flex-shrink: 0;
+    }
+    &__duration {
+        justify-self: end;
+    }
+}

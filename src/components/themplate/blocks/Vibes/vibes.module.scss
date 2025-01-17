@@ -1,0 +1,36 @@
+.vibeBtn {
+    border-radius: 12px;
+    min-height: 45px;
+    color: #e6e6e6;
+    padding: 8px 16px;
+}
+.listItem {
+    border-radius: 12px;
+    transition: background-color 0.3s ease-out;
+    &:hover {
+        background-color: #545454;
+    }
+    &_active {
+        background-color: #fff;
+    }
+}
+.vibesListTabs {
+   column-gap: 25px;
+   display: flex;
+   justify-content: space-between;
+   overflow: hidden;
+    &__item {
+        border-radius: 12px;
+        border: 1px solid #ffffff0a;
+        flex-grow: 1;
+        width: 100%;
+        max-width: calc((100% / 4) - 50px);
+        border-radius: 12px;
+        overflow: hidden;
+        flex-shrink: 0;
+    }
+}
+.vibesListTabs {
+    display: flex;
+    
+}
