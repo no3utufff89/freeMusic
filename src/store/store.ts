@@ -3,6 +3,7 @@ import defaultReducer from './defaultDataSlice/defaultDataSlice';
 import radioReducer from './radioStreamSlice/radioStreamSlice';
 import artstsReducer from './artistsDataSlice/artistsDataSlice';
 import playlistReducer from './playlist/playlistSlice';
+import currentPlaylistReducer from './currenGenreSlice/currentGenreSlice';
 
 const store = configureStore({
     reducer: {
@@ -10,6 +11,7 @@ const store = configureStore({
        radioData: radioReducer,
        artistsData: artstsReducer,
        playlistData: playlistReducer,  
+       currentPlaylistdata: currentPlaylistReducer,
 
     }, 
     middleware: (getDefaultMiddleware) => getDefaultMiddleware({

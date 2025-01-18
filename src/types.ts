@@ -80,6 +80,7 @@ export interface DefaultResponseType {
       weekChartData?: T | null,
       radioData?: T | null,
       artistsData?: T | null,
+      currentPlaylistData?: T | null,
     };
   }
   export interface PlaylistType<T> {
@@ -93,6 +94,7 @@ export interface DefaultResponseType {
   export type Chartprops = {
     title: string,
     subtitle: string,
+    hasIcon: boolean,
     data?: SongData[] | undefined,
 }
 export type Artistsprops = {

@@ -7,6 +7,7 @@ import { Link } from 'react-router';
 
 export const Genre:React.FC<MusicGenresDataType> = (props) => {
     const genreCardRef:React.RefObject<HTMLAnchorElement> = useRef(null);
+    
     useEffect(() => {
         const btn = genreCardRef.current;
         btn?.style.setProperty(

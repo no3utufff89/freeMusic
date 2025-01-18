@@ -11,7 +11,10 @@ export const SectionHeader:React.FC<Chartprops> = (props) => {
                 <div className={`${s.content} flex flex-col gap-x-2`}>
                 <div className={`${s.contentHeader}`}>
                     <p className="text-[#1E2023] font-semibold text-[24px]">{props.title}</p>
-                    <ChevronRight className={s.contentIcon} size={24} color="#7786ef"/>
+                    {props.hasIcon && (
+ <ChevronRight className={s.contentIcon} size={24} color="#7786ef"/>
+                    )}
+                   
                 </div>
                 <span className="text-[#7786ef] text-sm">{props.subtitle}</span>
                 </div>

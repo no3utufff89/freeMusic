@@ -12,7 +12,7 @@ export const Vibes:React.FC = () => {
     return (
         <section className='section mr-[15px]'>
            <div className={clsx(s.row, 'flex justify-between items-center mb-5')}>
-           <SectionHeader title='Больше открытий' subtitle='Музыка разных жанров под любое настроение'/>
+           <SectionHeader hasIcon={false} title='Больше открытий' subtitle='Музыка разных жанров под любое настроение'/>
            <SliderControls sliderRef={sliderRef}/>
            </div>
             <SliderBlock sliderRef={sliderRef}/>

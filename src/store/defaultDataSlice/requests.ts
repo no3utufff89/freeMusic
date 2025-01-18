@@ -2,6 +2,7 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import DefaultService from "../../services/DefaultService";
 import RadioService from "../../services/RadioService";
 import ArtistsService from "../../services/ArtistsService";
+import Genresservice from "../../services/GenresService";
 
 export const getDefaultTracks = createAsyncThunk(
     'data/getDefaultTracks',
@@ -12,6 +13,13 @@ export const getDefaultTracks = createAsyncThunk(
         return [topChart.data, weekChart.data]
     }
 );
+export const getCurrentPlaylistData = createAsyncThunk(
+    'data/getCurrentPlaylist',
+    async (genre:string) => {
+       const response = await Genresservice.fetchCurrentGenreAlbums(genre);
+       return response.data;
+    }
+)
 export const getRadios = createAsyncThunk(
     'data/getRadios',
     async () => {

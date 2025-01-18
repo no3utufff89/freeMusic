@@ -13,7 +13,7 @@ export const ArtistsBlock:React.FC<Artistsprops> = (props) => {
     const slicedArtistData = filtredData?.slice(0,4);
     return (
         <section className='section'>
-        <SectionHeader title='Популярные исполнители' subtitle='Музыка самых прослушиваемых исполнителей'/>
+        <SectionHeader hasIcon={false} title='Популярные исполнители' subtitle='Музыка самых прослушиваемых исполнителей'/>
         <ul className={s.artists}>
            {pathname === '/' ? (
              slicedArtistData?.map(artist => (

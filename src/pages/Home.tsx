@@ -11,9 +11,9 @@ export const Home:React.FC = () => {
     return (
        <div>
         <div className="flex flex-col">
-        <TopChart data={topChartMusicData} title="Топ чарт" subtitle="Лучшие популярные треки для вас"/>
+        <TopChart hasIcon={false} data={topChartMusicData} title="Топ чарт" subtitle="Лучшие популярные треки для вас"/>
               <Banner/>
-              <TopChart data={newWeekMusicData}  title="Новинки недели" subtitle="Слушали больше всех за неделю"/>
+              <TopChart hasIcon={false} data={newWeekMusicData}  title="Новинки недели" subtitle="Слушали больше всех за неделю"/>
               <Vibes/>
               <ArtistsBlock data={artistsData}/>
        
