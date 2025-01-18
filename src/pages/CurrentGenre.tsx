@@ -28,7 +28,7 @@ export const CurrentGenre = () => {
         <div>
             <SubPageTitle hasIcon={true} {...currentGenre} />
             <div ref={currentGrnreBlock} className="rounded bg-black w-[150px] h-[150px]">
-            <img src={`/public/icons/${currentGenre?.icon}.svg`} alt={currentGenre?.label} />
+            <img src={`icons/${currentGenre?.icon}.svg`} alt={currentGenre?.label} />
             
             </div>
             <TracksList/>

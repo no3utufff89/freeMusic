@@ -16,7 +16,7 @@ export const Genre:React.FC<MusicGenresDataType> = (props) => {
     },[])
     return (
         <Link to={`/genres/${props.name}`} className={s.genreItem} ref={genreCardRef}>
-            <img className={s.image} src={`./public/icons/${props.icon}.svg`} alt={props.name} />
+            <img className={s.image} src={`icons/${props.icon}.svg`} alt={props.name} />
             <span className={s.title}>{props.label}</span>
         </Link>
     )
